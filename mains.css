@@ -4,10 +4,19 @@
     padding: 0;
 }
 body{
-    background: linear-gradient(-45deg, #eaf4fe, #fbd9e2, #f2fabf, #d4f0f0, #fdbff3, #f6e4c1, #f0f8ff, #a3f9f9); 
-    background-size: 400% 400%;
-    animation: gradientAnimation 15s ease infinite;
+    background: linear-gradient(-45deg, #eaf4fe, #fbd9e2, #f2fabf, #d4f0f0, #d6fdbf, #d7fafd); 
+    background-size: 400%  400%;
 }
+footer{
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
 h1{
     text-align: center;
 }
@@ -32,6 +41,7 @@ h1{
     flex-direction: row;
     flex-wrap: wrap;
     gap: 3.5rem;
+    margin-top: 1rem;
     
     
 }
@@ -40,6 +50,8 @@ h1{
     justify-content: center;
     align-items: center;
     grid-template-columns: repeat(3, auto);
+    padding: 2rem;
+    margin: 2rem;
     
     
 }
@@ -92,6 +104,7 @@ button:hover{
     justify-content: center;
     align-items: center;
     font-family: sans-serif;
+    margin-bottom: 3rem;
 }
 
 .restart{
@@ -99,6 +112,7 @@ button:hover{
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+    padding-top: 2rem;
 }
 .end{
     text-align: center;
@@ -125,7 +139,11 @@ button:hover{
          height: 3rem;
          font-size: 1.5rem;
          border-radius: 5px;
- }    
+         margin-bottom: 2rem;
+        }    .restart{
+           gap: 1rem;
+           padding-top: 2rem;
+       }   
  }
 @media (max-width: 768px) { 
     .scoreTitle{
@@ -143,7 +161,11 @@ button:hover{
          height: 2.5rem;
          font-size: 1.5rem;
          border-radius: 5px;
- }    
+         margin-bottom: 1rem;
+ }    .restart{
+    gap: 1rem;
+    padding-top: 1rem;
+}
  }
 @media (max-width: 368px) {  
     .scoreTitle{
@@ -159,8 +181,10 @@ button:hover{
         height: 2rem;
         font-size: 1rem;
         border-radius: 5px;
+        margin-bottom: 1rem;
 }  .restart{
     gap: 1rem;
+    padding-top: 1rem;
 }
 }
 
