@@ -107,9 +107,15 @@ export class TheGame {
 
     checkend() {
         const endDOM = document.querySelector('.end');
-        if (this.board.length === 9) {
+        if (this.board.length === 9 || this.isGameOver=== true) {
             this.isGameOver = true;
             endDOM.textContent = 'Dar kartą?';
+
+            const img = document.createElement('img');
+            img.src = './eyeBrows.png';
+            img.alt = 'funny pic';
+            img.style.width = '50px'; 
+            endDOM.appendChild(img); 
         }
     }
 }
